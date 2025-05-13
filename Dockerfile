@@ -1,6 +1,11 @@
 # Use a Python image with uv pre-installed
 FROM ghcr.io/astral-sh/uv:python3.13-bookworm-slim
 
+# Add Docker labels
+LABEL org.opencontainers.image.source=https://github.com/jackwotherspoon/hello-cloud-run
+LABEL org.opencontainers.image.description="Hello World application with FastAPI deployed to Cloud Run."
+LABEL org.opencontainers.image.licenses="Apache-2.0"
+
 # Install the project into `/app`
 WORKDIR /app
 
