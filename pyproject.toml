@@ -1,0 +1,8 @@
+[project]
+name = "hello-cloud-run"
+version = "0.1.0"
+description = "Hello World application with FastAPI deployed to Cloud Run."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+dependencies = ["fastapi[standard]>=0.115.12"]
